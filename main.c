@@ -189,6 +189,7 @@ void rehash(struct Dog* shelter, int *size)
     int current_s=*size, new_s=*size;
     struct Dog* tmp;
     tmp = (struct Dog*) malloc(sizeof(struct Dog)*current_s);
+    new_s*=2;
     do
     {
         new_s++;
